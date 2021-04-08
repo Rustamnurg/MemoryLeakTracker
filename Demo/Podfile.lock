@@ -1,5 +1,5 @@
 PODS:
-  - MemoryLeakTracker (0.1)
+  - MemoryLeakTracker (0.2.0)
 
 DEPENDENCIES:
   - MemoryLeakTracker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MemoryLeakTracker: 47f045d9d74a3c80b089724d4e6ba59227f9d758
+  MemoryLeakTracker: 3b255f319f7aec7056a3b5bf047cdc76d8f55d0b
 
 PODFILE CHECKSUM: 49c4aa7466f178413615456b92cae8a044e87de5
 

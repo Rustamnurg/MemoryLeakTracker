@@ -21,6 +21,8 @@ final class EventNotificationManager: EventNotificationManagerProtocol {
             showAlert(with: message)
         case .push:
             showPush(with: message)
+        case .console:
+            printOnConsole(with: message)
         case .none:
             break
         }
@@ -72,5 +74,9 @@ final class EventNotificationManager: EventNotificationManagerProtocol {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             UIViewController.currentViewController()?.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    private func printOnConsole(with message: Message) {
+        print("\(message.title) \(message.subtitle ?? "") \(message.body ?? "")".trimmingCharacters(in: .whitespaces))
     }
 }
