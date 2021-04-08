@@ -13,13 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let configs = Configuration(
-            isEnable: true,
-            ignoreClasses: [],
-            notificationType: .push,
-            messageTrigger: 2,
-            logOnConsole: true
-        )
+        let configs = Configuration(notificationType: [.push, .console], messageTrigger: 2)
         MemoryLeakTracker.shared.configure(configs)
         setupPushNotifications(on: application)
         setRootViewController()

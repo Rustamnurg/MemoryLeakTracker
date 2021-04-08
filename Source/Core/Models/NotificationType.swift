@@ -10,5 +10,6 @@ import Foundation
 public enum NotificationType {
     case push
     case alert
+    case console
     case none
 }

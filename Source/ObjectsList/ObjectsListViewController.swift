@@ -52,9 +52,9 @@ final class ObjectsListViewController: UIViewController {
     }
     
     private func reloadData() {
-        viewModels = MemoryLeakTracker.shared.fetchAllActiveObjects().map {
-            ObjectsListCell.ViewModel(message: "\($0.key) \($0.value)")
-        }
+        viewModels = MemoryLeakTracker.shared.fetchAllActiveObjects()
+            .sorted {$0.value > $1.value}
+            .map { ObjectsListCell.ViewModel(message: "\($0.key) \($0.value)") }
         contentView.collectionView.reloadData()
     }
 }
