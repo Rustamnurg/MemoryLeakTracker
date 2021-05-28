@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Configuration {
+public struct MLKConfiguration {
     let isEnable: Bool
     // TODO: - In work
     let ignoreClasses: [String]
@@ -15,7 +15,7 @@ public struct Configuration {
     let messageTrigger: Int
     let logOnConsole: Bool
     
-    public init(isEnable: Bool = true,
+    public init(isEnable: Bool = false,
                 ignoreClasses: [String] = [],
                 notificationType: [NotificationType] = [.console],
                 messageTrigger: Int = 3,
