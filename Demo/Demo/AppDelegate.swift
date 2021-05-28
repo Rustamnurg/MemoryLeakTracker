@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let configs = MLKConfiguration(
-            isEnable: false,
+            isEnable: true,
             notificationType: [.push, .console],
             messageTrigger: 2
         )
