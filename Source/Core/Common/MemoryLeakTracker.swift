@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol MemoryLeakTrackerProtocol {
-    func configure(_ model: Configuration)
+    func configure(_ model: MLKConfiguration)
     func append(_ objectName: String)
     func remove(_ objectName: String)
     func fetchAllActiveObjects() -> [String: Int]
@@ -20,7 +20,7 @@ public class MemoryLeakTracker {
     // MARK: - Properties
     
     public static let shared: MemoryLeakTrackerProtocol = MemoryLeakTracker()
-    private var configuration = Configuration()
+    private var configuration = MLKConfiguration()
     private var active: [String: Int] = [:]
     private let eventNotificationManager: EventNotificationManagerProtocol = EventNotificationManager()
     private let messageFormatter: MessageFormatterProtocol = LeakMessageFormatter()
@@ -91,7 +91,7 @@ extension MemoryLeakTracker: MemoryLeakTrackerProtocol {
         return active
     }
     
-    public func configure(_ model: Configuration) {
+    public func configure(_ model: MLKConfiguration) {
         configuration = model
     }
     
