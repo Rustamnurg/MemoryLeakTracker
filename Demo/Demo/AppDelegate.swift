@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let configs = MLKConfiguration(
+        let configs = MLTConfiguration(
             isEnable: true,
             notificationType: [.push, .console],
             messageTrigger: 2

@@ -1,5 +1,5 @@
 //
-//  Configuration.swift
+//  MLTConfiguration.swift
 //  MemoryLeakTracker
 //
 //  Created by Rustam Nurgaliev on 04.04.2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MLKConfiguration {
+public struct MLTConfiguration {
     /// Is the library included
     let isEnable: Bool
     
