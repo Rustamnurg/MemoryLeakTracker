@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   
   s.name         = "MemoryLeakTracker"
   
-  s.version      = "0.2.0"
+  s.version      = "1.0.0"
   
   s.summary      = "Library for finding memory leaks"
   
