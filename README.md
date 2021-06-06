@@ -2,23 +2,23 @@
 
 **MemoryLeakTracker** is a library that helps track memory leaks.
 
-Leak notification methods:
-* Local push notifications
-* Alert
-* Message on console
-
-##Usage
-**MemoryLeakTracker** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-```ruby
-pod 'MemoryLeakTracker'
-```
-
 <p align="center">
   <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/push.gif" alt="Push Example" />
   <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/alert.gif" alt="Alert Example" />
   <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/console.gif" alt="Console Example" />
 </p>
+
+Leak notification methods:
+* Local push notifications
+* Alert
+* Message on console
+
+## Usage
+**MemoryLeakTracker** is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+```ruby
+pod 'MemoryLeakTracker'
+```
 
 In the AppDelegate file you need to add
 ```Swift
@@ -61,7 +61,7 @@ class BaseViewController: UIViewController {
     }
 }
 ```
-##Configuration
+## Configuration
 
 ```Swift
 struct MLKConfiguration {
@@ -94,4 +94,3 @@ present(logsViewController, animated: true)
 <p align="center">
     <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/allLogs.gif" alt="Example" />
 </p>
-
