@@ -3,9 +3,9 @@
 **MemoryLeakTracker** is a library that helps track memory leaks.
 
 <p align="center">
-  <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/push.gif" alt="Push Example" />
-  <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/alert.gif" alt="Alert Example" />
-  <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/console.gif" alt="Console Example" />
+  <img src="https://raw.githubusercontent.com/Rustamnurg/MemoryLeakTracker/master/gifs/push.gif" alt="Push Example" />
+  <img src="https://raw.githubusercontent.com/Rustamnurg/MemoryLeakTracker/master/gifs/alert.gif" alt="Alert Example" />
+  <img src="https://raw.githubusercontent.com/Rustamnurg/MemoryLeakTracker/master/gifs/console.gif" alt="Console Example" />
 </p>
 
 Leak notification methods:
@@ -92,5 +92,5 @@ let logsViewController = MemoryLeakTrackerController.load()
 present(logsViewController, animated: true)
 ```
 <p align="center">
-    <img src="https://github.com/Rustamnurg/MemoryLeakTracker/blob/feature/add-readme/gifs/allLogs.gif" alt="Example" />
+    <img src="https://raw.githubusercontent.com/Rustamnurg/MemoryLeakTracker/master/gifs/allLogs.gif" alt="Example" />
 </p>
