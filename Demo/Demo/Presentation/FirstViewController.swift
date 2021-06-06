@@ -52,7 +52,7 @@ final class FirstViewController: BaseViewController {
     }
     
     @objc private func logsButtonTapped() {
-        let vc = MemoryLeakTrackerController.load()
-        present(vc, animated: true)
+        let logsViewController = MemoryLeakTrackerController.load()
+        present(logsViewController, animated: true)
     }
 }

@@ -8,11 +8,24 @@
 import Foundation
 
 public struct MLKConfiguration {
+    /// Is the library included
     let isEnable: Bool
+    
     // TODO: - In work
+    /// Ignored classes
     let ignoreClasses: [String]
+    
+    /// Method of notification:
+    /// .push  - local push(you need to set up push notifications in your application!)
+    /// .alert - present alert on top screen
+    /// .console - print on console
+    /// .none - not notify
     let notificationType: [NotificationType]
+    
+    /// The required number of matches for the assumption of leakage
     let messageTrigger: Int
+    
+    /// Logging of all library activities in the console
     let logOnConsole: Bool
     
     public init(isEnable: Bool = false,
