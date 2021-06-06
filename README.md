@@ -27,7 +27,7 @@ import MemoryLeakTracker
 
 ```Swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let configs = MLKConfiguration(
+    let configs = MLTConfiguration(
         isEnable: true,
         notificationType: [.push, .console, .alert],
         messageTrigger: 2
